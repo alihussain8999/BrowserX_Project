@@ -279,7 +279,6 @@ public class ProcessInitializationHandler {
             public void run() {
                 // Punt all tasks that may block on disk off onto a background thread.
                 initAsyncDiskTask(application);
-
                 DefaultBrowserInfo.initBrowserFetcher();
 
                 AfterStartupTaskUtils.setStartupComplete();
